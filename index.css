@@ -563,33 +563,102 @@ body:not(.user-is-tabbing) a:focus {
     }
 } */
 
-/* Container: force column layout */
+/* About section container */
+.about {
+    padding: 60px 20px;
+    background-color: #121212;
+}
+
+.about .row {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Section heading */
+.about h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+/* Content layout */
 .about__content {
     display: flex;
-    flex-direction: column;  /* picture on top, text below */
-    align-items: center;
-    gap: 2rem;  /* space between photo and text */
-}
-
-/* Columns for text */
-.about__text {
-    column-count: 3;       /* two columns for paragraphs */
-    column-gap: 2rem;      /* gap between columns */
-    text-align: justify;    /* clean edges */
-    width: 100%;
-}
-
-/* Responsive for mobile */
-@media(max-width: 900px) {
-    .about__text {
-        column-count: 1;   /* single column on smaller screens */
-    }
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* Photo styling */
-.about__photo-container img {
-    display: block;
-    margin: 0 auto;      /* center the picture */
+.about__photo-container {
+    flex: 1 1 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.about__photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about__photo:hover {
+    transform: scale(1.05);
+}
+
+/* Text area styling */
+.about__text {
+    flex: 2 1 500px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Paragraphs */
+.about__text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+/* Resume button */
+.about__text .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about__text .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .about__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about__text {
+        padding: 20px;
+    }
 }
 
 
