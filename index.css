@@ -585,10 +585,10 @@ body:not(.user-is-tabbing) a:focus {
 /* Content layout */
 .about__content {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
 }
 
 /* Photo styling */
