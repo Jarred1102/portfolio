@@ -509,11 +509,11 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Clients ----- */
 /* --------------------------------------- */
 
-.clent h2 {
+.row h2 {
     text-align: center;
 }
 
-.client h2::after {
+.row h2::after {
     margin-left: auto;
     margin-right: auto;
 }
