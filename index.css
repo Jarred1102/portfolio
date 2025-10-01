@@ -520,8 +520,15 @@ body:not(.user-is-tabbing) a:focus {
 
 .client__logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     filter: invert(100%) grayscale(100%) opacity(.8);
+    gap: 20px; /* space between images */
+    flex-wrap: nowrap; /* keeps images in one row */
+}
+
+.client__logos img {
+    height: auto;
+    display: block;
 }
 
 .client__logo {
