@@ -126,6 +126,7 @@ h3 {
     font-weight: 400;
     line-height: var(--line-height-small);
     color: var(--white);
+    text-align: center;
 }
 
 .heading-primary {
