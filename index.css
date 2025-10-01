@@ -628,6 +628,21 @@ body:not(.user-is-tabbing) a:focus {
     color: #e0e0e0;
 }
 
+Resume button
+.about__text .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #ffffff;
+    background-color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about__text .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
     .about__content {
         flex-direction: column;
