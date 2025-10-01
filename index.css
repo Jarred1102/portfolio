@@ -563,12 +563,6 @@ body:not(.user-is-tabbing) a:focus {
     }
 } */
 
-/* About section container */
-.about {
-    padding: 60px 20px;
-    background-color: #121212;
-}
-
 .about .row {
     max-width: 1100px;
     margin: 0 auto;
