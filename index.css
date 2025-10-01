@@ -509,9 +509,13 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Clients ----- */
 /* --------------------------------------- */
 
-.clents h2 {
+.clent h2 {
     text-align: center;
-    margin-bottom: var(--gutter-huge);
+}
+
+.client h2::after {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .client__logos {
@@ -570,7 +574,11 @@ body:not(.user-is-tabbing) a:focus {
 
 .about h2 {
     text-align: center;
-    margin-bottom: var(--gutter-huge);
+}
+
+.about h2::after {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about .row {
