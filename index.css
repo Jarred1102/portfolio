@@ -126,7 +126,6 @@ h3 {
     font-weight: 400;
     line-height: var(--line-height-small);
     color: var(--white);
-    text-align: left;
 }
 
 .heading-primary {
@@ -144,6 +143,7 @@ h3 {
 h2 {
     font-size: var(--font-size-large);
     margin-bottom: var(--gutter-medium);
+    text-align: left;
 }
 
 h2::after {
