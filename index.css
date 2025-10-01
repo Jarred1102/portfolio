@@ -574,14 +574,6 @@ body:not(.user-is-tabbing) a:focus {
     margin: 0 auto;
 }
 
-/* Section heading */
-.about h2 {
-    /* font-size: 2.5rem; */
-    text-align: left;
-    margin-bottom: 40px;
-    color: #ffffff;
-}
-
 /* Content layout */
 .about__content {
     display: flex;
