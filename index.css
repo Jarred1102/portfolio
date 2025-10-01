@@ -535,16 +535,16 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- About ----- */
 /* --------------------------------------- */
 
-.about__content {
+/* .about__content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
 @media(max-width: 900px) {
     .about__content {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column-reverse;
+        align-items: initial;
     }
 }
 
@@ -554,18 +554,52 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(min-width: 901px) {
     .about__text {
-        column-count: 2;       /* split text into 2 columns */
-        column-gap: 2rem;      /* space between columns */
-        text-align: justify;    /* optional, looks clean */
-        width: 100%;
-        max-width: 900px;       /* optional, prevent too wide columns */
+        flex: 0 0 35%;
     }
     
     .about__photo-container {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
     }
+} */
+
+/* Container: force column layout */
+.about__content {
+    display: flex;
+    flex-direction: column;  /* picture on top, text below */
+    align-items: center;
+    gap: 2rem;  /* space between photo and text */
 }
+
+/* Columns for text */
+.about__text {
+    column-count: 2;       /* two columns for paragraphs */
+    column-gap: 2rem;      /* gap between columns */
+    text-align: justify;    /* clean edges */
+    width: 100%;
+    max-width: 900px;       /* optional, prevent columns from stretching too wide */
+}
+
+/* Responsive for mobile */
+@media(max-width: 900px) {
+    .about__text {
+        column-count: 1;   /* single column on smaller screens */
+    }
+}
+
+/* Photo styling */
+.about__photo-container img {
+    display: block;
+    max-width: 200px;    /* adjust as needed */
+    border-radius: 50%;  /* rounded image */
+    margin: 0 auto;      /* center the picture */
+}
+
+/* Optional: remove the resume button */
+.about__resume-button {
+    display: none;
+}
+
 
 /* --------------------------------------- */
 /* ----- Contact ----- */
