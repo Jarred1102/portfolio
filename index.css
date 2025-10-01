@@ -628,7 +628,7 @@ body:not(.user-is-tabbing) a:focus {
     color: #e0e0e0;
 }
 
-/* Resume button */
+/* Resume button
 .about__text .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -643,7 +643,7 @@ body:not(.user-is-tabbing) a:focus {
 .about__text .btn:hover {
     background-color: #0056b3;
     transform: scale(1.05);
-}
+} */
 
 @media (max-width: 768px) {
     .about__content {
