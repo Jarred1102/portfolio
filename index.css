@@ -126,7 +126,6 @@ h3 {
     font-weight: 400;
     line-height: var(--line-height-small);
     color: var(--white);
-    text-align: center;
 }
 
 .heading-primary {
@@ -510,6 +509,11 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Clients ----- */
 /* --------------------------------------- */
 
+.clent h2 {
+    text-align: center;
+    margin-bottom: var(--gutter-huge);
+}
+
 .client__logos {
     display: flex;
     justify-content: space-between;
@@ -563,6 +567,11 @@ body:not(.user-is-tabbing) a:focus {
         margin: 0 var(--gutter-huge) 0 0;
     }
 } */
+
+.about h2 {
+    text-align: center;
+    margin-bottom: var(--gutter-huge);
+}
 
 .about .row {
     max-width: 1100px;
