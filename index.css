@@ -250,7 +250,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .btn--blue {
-    background: var(--blue);
+    background: transparent;
     transition: all 0.2s;
     border-radius: 10rem;
 }
@@ -261,7 +261,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .btn--blue:hover,
 .btn--blue:focus {
-    background: transparent;
+    background: var(--blue);
 }
 
 .link__text {
