@@ -224,6 +224,7 @@ body:not(.user-is-tabbing) a:focus {
     color: inherit;
     border: 1px solid  var(--blue);
     font-weight: 300;
+    border-radius: 10rem;
 }
 
 .btn:focus {
@@ -298,7 +299,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .link__text span {
     padding-left: 1rem;
-    font-family: sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 
 /* ----- Back to Top ----- */
