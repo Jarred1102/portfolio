@@ -502,7 +502,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image-box:hover {
     transform: scale(1.2);
-    transition: all .3s;
 }
 
 .work__image-box.visible {
