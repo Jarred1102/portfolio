@@ -153,7 +153,7 @@ h2::after {
     width: 10rem;
     background: var(--blue);
     margin: var(--gutter-small) 0;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
 }
 
