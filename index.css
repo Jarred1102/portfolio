@@ -252,6 +252,7 @@ body:not(.user-is-tabbing) a:focus {
 .btn--blue {
     background: var(--blue);
     transition: all 0.2s;
+    border-radius: 10rem;
 }
 
 .btn--blue::after {
