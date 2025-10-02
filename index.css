@@ -505,7 +505,7 @@ body:not(.user-is-tabbing) a:focus {
     transition: all .3s;
 }
 
-.fade-in.visible {
+.work__image-box.visible {
   opacity: 1;              /* fully visible */
   transform: translateY(0); /* back to normal position */
 }
