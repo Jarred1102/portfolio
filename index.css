@@ -242,12 +242,14 @@ body:not(.user-is-tabbing) a:focus {
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+    border-radius: 10rem;
 }
 
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
     background: var(--blue);
+    border-radius: 10rem;
 }
 
 .btn--blue {
@@ -263,6 +265,7 @@ body:not(.user-is-tabbing) a:focus {
 .btn--blue:hover,
 .btn--blue:focus {
     background: var(--blue);
+    border-radius: 10rem;
 }
 
 .link__text {
