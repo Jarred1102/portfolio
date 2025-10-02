@@ -495,7 +495,19 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
+    opacity: 0;              /* invisible */
+    transform: translateY(20px); /* slightly pushed down */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.work__image-box:hover {
     transform: scale(1.2);
+    transition: all .3s;
+}
+
+.fade-in.visible {
+  opacity: 1;              /* fully visible */
+  transform: translateY(0); /* back to normal position */
 }
 
 @media(min-width: 901px) {
