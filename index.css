@@ -511,7 +511,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box:hover .work__image {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .work__image-box.visible {
