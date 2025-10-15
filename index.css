@@ -392,7 +392,7 @@ body:not(.user-is-tabbing) a:focus {
     left: 0;
     right: 100%;
     display: inline-block;
-    height: 1rem;
+    /* height: 1rem; */
     background: var(--white);
     transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
