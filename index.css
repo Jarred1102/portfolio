@@ -394,7 +394,7 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     /* height: 1rem; */
     background: var(--white);
-    transition: all 0.25s cubic-bezier(0, 0.5, 0, 1);
+    transition: all 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 
 /* .nav__link:hover {
