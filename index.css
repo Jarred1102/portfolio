@@ -382,7 +382,6 @@ body:not(.user-is-tabbing) a:focus {
     /* padding: 1rem 0; */
     text-decoration: none;
     color: white;
-    transition: all .2s;
 }
 
 .nav__link::after {
@@ -391,6 +390,7 @@ body:not(.user-is-tabbing) a:focus {
     bottom: 0;
     left: 0;
     right: 100%;
+    height: 1px;
     display: inline-block;
     /* height: 1rem; */
     background: var(--white);
@@ -403,7 +403,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav__link:hover::after {
     right: 0;
-    height: 2px;
+    width: 100%;
+    height: 1px;
     /* background: var(--blue); */
     background: var(--white);
 }
