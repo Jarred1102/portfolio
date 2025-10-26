@@ -248,7 +248,7 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--blue);
+    background: var(--white);
     border-radius: 10rem;
 }
 
@@ -264,6 +264,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .btn--blue:hover,
 .btn--blue:focus {
+    color: black;
     background: var(--white);
     border-radius: 10rem;
 }
