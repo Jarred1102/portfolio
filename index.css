@@ -424,6 +424,18 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-normal);
 }
 
+/* Matrix background setup */
+#matrix-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: radial-gradient(circle at top left, #0a0a0a, #000);
+  opacity: 0.25; /* subtle fade */
+}
+
 .header__text {
     position: absolute;
     top: 50%;
