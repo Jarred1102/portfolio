@@ -75,24 +75,32 @@ const columns = canvas.width / fontSize;
 const drops = Array(Math.floor(columns)).fill(1);
 
 function draw() {
-  // Slight fade for trailing effect
+  // Draw the fading background for trailing effect
   ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  ctx.fillStyle = 'rgba(0, 255, 70, 0.3)'; // subtle green
+  ctx.fillStyle = 'rgba(0, 255, 70, 0.3)';
   ctx.font = fontSize + 'px monospace';
 
   drops.forEach((y, i) => {
     const text = letters.charAt(Math.floor(Math.random() * letters.length));
     ctx.fillText(text, i * fontSize, y * fontSize);
 
-    // Reset drop randomly to keep animation organic
-    if (y * fontSize > canvas.height && Math.random() > 0.975) {
-      drops[i] = 0;
-    }
+    if (y * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
     drops[i]++;
   });
+
+  // ✅ Fade overlay from left to right
+  const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+  gradient.addColorStop(0, 'rgba(0, 0, 0, 1)');
+  gradient.addColorStop(0.3, 'rgba(0, 0, 0, 0.9)');
+  gradient.addColorStop(0.7, 'rgba(0, 0, 0, 0.2)');
+  gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+  
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
+
 
 setInterval(draw, 50);
 
