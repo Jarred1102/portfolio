@@ -79,7 +79,8 @@ function draw() {
   ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  ctx.fillStyle = 'rgba(0, 255, 70, 0.3)';
+  // ctx.fillStyle = 'rgba(0, 255, 70, 0.3)';
+  ctx.fillStyle = '#00FF46'; // Bright green color
   ctx.font = fontSize + 'px monospace';
 
   drops.forEach((y, i) => {
