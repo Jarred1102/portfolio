@@ -318,8 +318,7 @@ body:not(.user-is-tabbing) a:focus {
     height: 5.5rem;
     width: 5.5rem;
     background-color: var(--black);
-    border-color: var(--blue);
-    border-width: 1rem;
+    border: 2px solid var(--blue);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
