@@ -212,9 +212,9 @@ body:not(.user-is-tabbing) a:focus {
     outline: none;
 }
 
-.link:hover {
+/* .link:hover {
     color: var(--blue);
-}
+} */
 
 .btn {
     position: relative;
