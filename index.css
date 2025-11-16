@@ -238,10 +238,11 @@ body:not(.user-is-tabbing) a:focus {
     top: 0;
     left: 0;
     right: 100%;
+    color: black;
     background: var(--white);
     height: 100%;
     z-index: -1;
-    transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+    /* transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9); */
     border-radius: 10rem;
 }
 
