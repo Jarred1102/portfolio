@@ -338,7 +338,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .back-to-top:hover {
-    scale: 1.25;
+    scale: 1.1;
 }
 
 .back-to-top__image {
