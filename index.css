@@ -330,7 +330,7 @@ body:not(.user-is-tabbing) a:focus {
     transition: all .4s;
 }
 
-.back-to-top::hover {
+.back-to-top:hover {
     scale: 1.05;
 }
 
