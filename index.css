@@ -229,33 +229,40 @@ body:not(.user-is-tabbing) a:focus {
     transition: all 0.2s;
 }
 
+.btn:hover,
+.btn:focus {
+    color: black;
+    background: var(--white);
+    border-radius: 10rem;
+}
+
 .btn:focus {
     outline: none;
 }
 
-.btn::after {
+/* .btn::after {
     content: '';
     display: block;
     position: absolute;
     /* top: 0;
     left: 0;
-    right: 100%; */
+    right: 100%; 
     color: black;
     background: var(--white);
     height: 100%;
     /* z-index: -1; */
-    /* transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9); */
+    /* transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9); 
     transition: all 0.2s;
     border-radius: 10rem;
-}
+} */
 
-.btn:hover::after,
+/* .btn:hover::after,
 .btn:focus::after {
-    /* right: 0; */
+    /* right: 0; 
     color: black;
     background: var(--white);
     border-radius: 10rem;
-}
+} */
 
 .btn--blue {
     background: transparent;
