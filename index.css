@@ -713,7 +713,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .about__text .btn:hover {
-    background-color: var(--blue);
+    background-color: var(--white);
     transform: scale(1.05);
 }
 
