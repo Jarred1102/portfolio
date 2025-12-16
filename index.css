@@ -502,7 +502,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-.work__links {
+.work__links a {
     display: flex;
     align-items: center;
     background: transparent;
@@ -510,12 +510,12 @@ body:not(.user-is-tabbing) a:focus {
     border-radius: 10rem;
 }
 
-.work__links::after {
+.work__links a::after {
     display: none;
 }
 
-.work__links:hover,
-.work__links:focus {
+.work__links a:hover,
+.work__links a:focus {
     color: black;
     background: var(--white);
     border-radius: 10rem;
