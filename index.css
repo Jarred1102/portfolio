@@ -706,13 +706,14 @@ body:not(.user-is-tabbing) a:focus {
 .about__text .btn {
     display: inline-block;
     padding: 12px 24px;
-    color: #ffffff;
+    color: white;
     background-color: black;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .about__text .btn:hover {
+    color: black;
     background-color: var(--white);
     transform: scale(1.05);
 }
