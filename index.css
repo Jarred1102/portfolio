@@ -503,8 +503,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__links a {
-    display: flex;
-    align-items: center;
     background: transparent;
     border-radius: 10rem;
     max-width: fit-content;
