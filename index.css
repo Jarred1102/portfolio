@@ -506,7 +506,6 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     align-items: center;
     background: transparent;
-    transition: all 0.2s;
     border-radius: 10rem;
 }
 
