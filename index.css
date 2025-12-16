@@ -505,6 +505,20 @@ body:not(.user-is-tabbing) a:focus {
 .work__links {
     display: flex;
     align-items: center;
+    background: transparent;
+    transition: all 0.2s;
+    border-radius: 10rem;
+}
+
+.work__links::after {
+    display: none;
+}
+
+.work__links:hover,
+.work__links:focus {
+    color: black;
+    background: var(--white);
+    border-radius: 10rem;
 }
 
 .work__text {
