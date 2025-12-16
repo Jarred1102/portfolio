@@ -507,6 +507,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     background: transparent;
     border-radius: 10rem;
+    max-width: fit-content;
 }
 
 .work__links a::after {
