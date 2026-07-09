@@ -541,7 +541,7 @@ body:not(.user-is-tabbing) a:focus {
 .work__image {
   transition: transform 0.3s ease; /* smooth scaling */
   display: block;                 /* removes weird gaps */
-  width: auto;                    /* make sure it fills container */
+  width: 100%;                    /* make sure it fills container */
   height: auto;
   align-items: center;
 }
@@ -560,6 +560,21 @@ body:not(.user-is-tabbing) a:focus {
         flex: 1;
         margin: 0 0 0 10rem;
     }
+}
+
+.work__box:nth-of-type(2) .work__image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work__box:nth-of-type(2) .work__image {
+    width: auto;
+    max-width: 24rem;
+    max-height: 32rem;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 @media(max-width: 900px) {
