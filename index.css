@@ -543,6 +543,7 @@ body:not(.user-is-tabbing) a:focus {
   display: block;                 /* removes weird gaps */
   width: auto;                    /* make sure it fills container */
   height: auto;
+  align-items: center;
 }
 
 .work__image-box:hover .work__image {
