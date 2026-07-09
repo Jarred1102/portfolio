@@ -570,8 +570,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__box:nth-of-type(2) .work__image {
     width: auto;
-    max-width: 27rem;
-    max-height: 36rem;
+    max-width: 50rem;
+    max-height: 66.5rem;
     height: auto;
     object-fit: contain;
     margin: 0 auto;
